@@ -58,7 +58,7 @@
                 <label for="xs">XS</label>
                 <input type="radio" name="size" id="xs" value="xs">
                 <label for="m">M</label>
-                <input type="radio" name="size" id="m" value="m">
+                <input type="radio" name="size" id="m" value="m" checked>
                 <label for="s">S</label>
                 <input type="radio" name="size" id="s" value="s">
             </p>
@@ -70,6 +70,15 @@
                     <option value="steak">Steak</option>
                 </select>
             </p>
+            <p>
+                <label for="cheese">Amount of Cheese</label>
+                <input type="range" name="cheese_level" id="cheese" min="0" max="10" step="5" value="5">
+            </p>    
+            <p>
+                <label for="requests">Ant special requests?</label>
+                <br>
+                <textarea name="requests" id="requests" rows="10" cols="40" placeholder="Type something here"></textarea>
+            </p>        
             <button>Submit</button>
         </form>
 
