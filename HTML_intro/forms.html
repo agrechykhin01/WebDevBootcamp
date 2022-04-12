@@ -29,7 +29,7 @@
                 <label>
                     Enter a number:
                     <input type="number" placeholder="number" name="num">
-                </label>                
+                </label>
             </p>
             <button>Submit</button>
         </form>
@@ -73,12 +73,32 @@
             <p>
                 <label for="cheese">Amount of Cheese</label>
                 <input type="range" name="cheese_level" id="cheese" min="0" max="10" step="5" value="5">
-            </p>    
+            </p>
             <p>
                 <label for="requests">Ant special requests?</label>
                 <br>
-                <textarea name="requests" id="requests" rows="10" cols="40" placeholder="Type something here"></textarea>
-            </p>        
+                <textarea name="requests" id="requests" rows="10" cols="40"
+                    placeholder="Type something here"></textarea>
+            </p>
+            <button>Submit</button>
+        </form>
+
+        <h2>Validations Demo</h2>
+        <form action="/dummy">
+            <label for="first">Input First Name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">Input Username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="email">Input Email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="url">Input URL</label>
+                <input type="url" name="url" id="url" required>
+            </p>
             <button>Submit</button>
         </form>
 
