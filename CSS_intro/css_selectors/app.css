@@ -1,7 +1,3 @@
-/* * {
-    background-color: cyan;
-} */
-
 body {
     background-color: #f1faee;
 }
@@ -33,8 +29,66 @@ span {
 
 .post a {
     color: #a8dadc;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 footer a {
     color: #e63946;
+}
+
+h2+button {
+    font-size: 20px;
+}
+
+footer>a {
+    color: #457b9d;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+a[href*="google"] {
+    color: magenta;
+}
+
+.post button:hover {
+    background-color: #e63946;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: #fcbf49;
+}
+
+.post button:hover {
+    background-color: #e63946;
+}
+
+button:hover {
+    background-color: olive;    
+}
+
+button {
+    background-color: magenta !important;
 }
