@@ -7,6 +7,13 @@ function callTwice(func) {
     console.log(func(7, 6));
 }
 
+function callTwice2(func) {
+    func();
+    func();
+    func();
+    func();
+}
+
 //callTwice(add);
 
 function makeMysteryFunc() {
@@ -25,4 +32,4 @@ function makeMysteryFunc() {
 }
 
 let f = makeMysteryFunc();
-f();
+callTwice2(f);
